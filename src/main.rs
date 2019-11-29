@@ -53,7 +53,7 @@ fn main(){
         .exit_on_esc(true).build().unwrap_or_else(|e|{
             panic!("Failed to build PistonWindow: {}",e)
         });
-    let mut glyphs=window.load_font("/home/alexander/.local/share/fonts/futura.ttf").unwrap();
+    let mut glyphs=window.load_font("futura.ttf").unwrap();
     let mut rains=get_rains(&mut rng);
     let mut buffer=String::from("A");
 
